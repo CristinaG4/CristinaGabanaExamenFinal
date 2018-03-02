@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a21621866.cristinagabanaexamenfinal.Main2Activity">
+
+    <ImageView
+        android:id="@+id/imagenUni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/uni"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:background="@drawable/gradiente" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagenUni"
+        android:padding="30dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Library"
+            android:padding="20dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/red"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textoLibrary"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:scrollbarThumbHorizontal="@drawable/scroll">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarThumbHorizontal="@drawable/scroll">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true">
+                <ImageView
+                    android:id="@+id/btnTwitter"
+                    android:background="@drawable/twitter"
+                    style="@style/styleBotonesCompartir"
+                    android:layout_marginLeft="14dp"
+                    android:scrollbarThumbHorizontal="@drawable/scroll"/>
+                <ImageView
+                    android:id="@+id/btnYoutube"
+                    style="@style/styleBotonesCompartir"
+                    android:background="@drawable/youtube"
+                    android:scrollbarThumbHorizontal="@drawable/scroll"/>
+                <ImageView
+                    android:id="@+id/btnInstagram"
+                    style="@style/styleBotonesCompartir"
+                    android:background="@drawable/instagram"
+                    android:scrollbarThumbHorizontal="@drawable/scroll"/>
+
+                <ImageView
+                    android:id="@+id/btnFacebook"
+                    style="@style/styleBotonesCompartir"
+                    android:background="@drawable/facebook"
+                    android:scrollbarThumbHorizontal="@drawable/scroll"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

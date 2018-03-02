@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a21621866.cristinagabanaexamenfinal.MainActivity"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/tituloLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/styleTituloLogin"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/girl"
+        android:contentDescription="@string/image_description"/>
+
+    <LinearLayout
+        android:id="@+id/editTextLayout"
+        style="@style/styleLinearlayout"
+        android:orientation="vertical"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/title">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/userNameField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/username_Hint"
+                android:textColor="@color/amarillo"
+                android:textColorHint="@color/lightGrey"
+                android:textSize="17sp">
+                <requestFocus />
+            </android.support.design.widget.TextInputEditText>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/title">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/passwordField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/password_Hint"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/lightGrey"
+                    android:textSize="17sp"/>
+            </android.support.design.widget.TextInputLayout>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="13dp"
+        android:text="SING IN"
+        android:textColor="@color/blanco"
+        android:background="@drawable/estilo_button"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/textSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:text="@string/textFinal"
+        android:layout_below="@+id/btnLogin"
+        android:textColor="@android:color/white"/>
+
+
+
+</RelativeLayout>

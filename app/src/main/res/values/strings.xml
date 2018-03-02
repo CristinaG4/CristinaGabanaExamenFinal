@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CristinaGabanaExamenFinal</string>
+    <string name="image_description">Imagen corporativa</string>
+    <string name="textFinal">UEM handlycrafted</string>
+    <string name="username_Hint">Username</string>
+    <string name="password_Hint">Password</string>
+    <string name="textoLibrary">Del 11 al 14 de diciembre, en el Campus de Villaviciosa de Odón, participa en el Mercadillo Solidario de Libros organizado por la Biblioteca CRAI Dulce Chacón.</string>
+</resources>
